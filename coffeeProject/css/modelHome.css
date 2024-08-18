@@ -1,0 +1,152 @@
+body {
+  background: url(../image/891a8d89a79b5cd0fdbb40f75e651103.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10rem;
+}
+#footer {
+  margin-top: 10rem;
+  background: url(../image/menu-bg.jpg) no-repeat;
+}
+/* Modal styles */
+#menu {
+  background: none !important;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: rgb(67, 67, 50, 0.9);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  font-size: 1.5em;
+}
+
+.modal-content img {
+  width: 80px;
+  height: 60px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.modal-content h2 {
+  margin: 0 0 15px;
+}
+
+.modal-content p {
+  margin: 10px 0;
+}
+.modal-content p span {
+  color: #dddcdc;
+  font-size: 15px;
+  font-weight: 600;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal .btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.modal .btn:hover {
+  background-color: #555;
+}
+/* 
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#location-radio-group label input:checked{
+  color: #000000;
+  background-color: aqua;
+} */
+/* Style the label and span for unchecked radio buttons */
+.location-radio-group label {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hide the actual radio button */
+.location-radio-group input[type="radio"] {
+  display: none;
+}
+
+/* Style for checked radio buttons */
+.location-radio-group input[type="radio"]:checked + span {
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+#deliveryDescription {
+  font-size: 1.5em;
+  color: #000000;
+}
+#deliveryDescription span {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #dddcdc;
+}
+#deliveryLocationInput input {
+  background-color: #757967;
+  padding: 10px 6px;
+  color: white;
+  width: 90%;
+  border-radius: 8px;
+}
+#deliveryLocationInput input::placeholder {
+  color: rgb(175, 171, 171);
+}
+.quantity-input {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+.quantity-input input {
+  width: 60px;
+  text-align: center;
+  background-color: transparent;
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+}

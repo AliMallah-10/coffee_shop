@@ -1,0 +1,89 @@
+/* Add your CSS styles in this file */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("../image/coffee-time-background-4b1797.jpg") no-repeat center
+    center fixed !important;
+  background-size: cover;
+  color: #ffffff;
+  /* overflow-y: hidden; */
+}
+
+.container {
+  background-color: rgb(67, 67, 50, 0.8); /* #443 with opacity */
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 100px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #434332;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #443;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+h3 {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+h3 a {
+  color: #97975a;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+h3 a:hover {
+  color: #dddddd;
+}
+#error_message {
+  margin-top: 10px;
+  color: red;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
